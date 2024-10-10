@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative; /* Footer will be placed below the content */
+}
+
+.container {
+    position: relative; /* This creates a new positioning context for absolutely positioned elements */
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    margin: 1rem;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.static {
+    background-color: #2196F3; /* Blue */
+    /* Static positioning is default, so no positioning rules needed */
+}
+
+.relative {
+    background-color: #FF9800; /* Orange */
+    position: relative;
+    top: 10px; /* Moves the box down 10px */
+    left: 10px; /* Moves the box right 10px */
+}
+
+.absolute {
+    background-color: #F44336; /* Red */
+    position: absolute;
+    top: 0; /* Position the box at the top of the container */
+    right: 0; /* Position the box at the right of the container */
+}
+
+.fixed {
+    background-color: #9C27B0; /* Purple */
+    position: fixed;
+    bottom: 0; /* Always at the bottom of the viewport */
+    left: 0;
+    width: 100%; /* Stretch across the bottom */
+    text-align: center;
+}
